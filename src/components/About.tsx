@@ -81,7 +81,7 @@ export default function About() {
           {/* Quick stats */}
           <div className="grid grid-cols-2 gap-2">
             {[
-              { value: '4+', label: lang === 'ko' ? '년 경력' : 'Yrs Exp' },
+              { value: '3+', label: lang === 'ko' ? '년 경력' : 'Yrs Exp' },
               { value: '2+', label: lang === 'ko' ? '프로젝트' : 'Projects' },
               { value: 'BE', label: lang === 'ko' ? '백엔드' : 'Backend' },
               { value: 'FE', label: lang === 'ko' ? '프론트' : 'Frontend' },
