@@ -1,4 +1,4 @@
-export type Lang = 'ko' | 'en'
+export type Lang = 'ko' | 'en' | 'ja'
 
 export const translations = {
   ko: {
@@ -34,6 +34,7 @@ export const translations = {
     selectedWorks: {
       title: 'Selected Works',
       caseStudy: '케이스 스터디',
+      liveSite: '서비스 보기',
     },
     contact: {
       title: '다음 비전을 함께 설계할 준비가 되셨나요?',
@@ -83,6 +84,7 @@ export const translations = {
     selectedWorks: {
       title: 'Selected Works',
       caseStudy: 'Case Study',
+      liveSite: 'Live Site',
     },
     contact: {
       title: 'Ready to architect your next vision?',
@@ -97,6 +99,56 @@ export const translations = {
       sending: 'Sending...',
       success: 'Message sent!',
       successSub: "I'll get back to you as soon as possible.",
+    },
+  },
+  ja: {
+    nav: {
+      portfolio: 'ポートフォリオ',
+      about: '自己紹介',
+      stacks: '技術スタック',
+      history: '実績',
+      hireMe: 'お問い合わせ',
+    },
+    hero: {
+      role: 'Full Stack Developer',
+      title1: '作ることで、',
+      title2: '価値を生み出す',
+      subtitle:
+        'バックエンドの堅牢さとフロントエンドの繊細さが交わる場所。ユーザーが実感できる違いをコードで作り上げます。',
+      cta: 'はじめる',
+      ctaSecondary: '作品を見る',
+    },
+    about: {
+      title: 'About Me',
+      name: 'イ・ヨンミン',
+      role: 'Full Stack Developer',
+      bio: 'Spring Bootを用いたバックエンドからReact/Vueフロントエンドまで、フルスタックでサービスを設計・実装します。ビジネス要件を素早く把握し、実用的なソリューションへと落とし込むことを得意とします。',
+      experienceLabel: '職歴',
+      photoAlt: 'イ・ヨンミンのプロフィール写真',
+    },
+    techStacks: {
+      title: 'Technical Stacks',
+      subtitle: 'スケーラブルなアーキテクチャを構築するためのツール群。',
+      version: 'V2.0.4 CORE',
+    },
+    selectedWorks: {
+      title: 'Selected Works',
+      caseStudy: 'ケーススタディ',
+      liveSite: 'サービスを見る',
+    },
+    contact: {
+      title: '次のビジョンを一緒に設計しませんか？',
+      subtitle: 'フリーランスプロジェクトや技術コンサルティングを承っております。',
+      name: 'お名前',
+      email: 'メールアドレス',
+      details: 'プロジェクト内容',
+      namePlaceholder: '山田太郎',
+      emailPlaceholder: 'yamada@company.com',
+      detailsPlaceholder: 'プロジェクトについて教えてください...',
+      send: 'メッセージを送る',
+      sending: '送信中...',
+      success: 'メッセージを送信しました！',
+      successSub: 'できるだけ早くご連絡いたします。',
     },
   },
 }

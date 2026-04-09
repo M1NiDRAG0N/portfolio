@@ -8,18 +8,22 @@ const timeline = [
     period: '2020.03 – 2022.06',
     company: '모빌라이즈파이낸셜서비스',
     companyEn: 'Mobilize Financial Services',
+    companyJa: 'モビライズファイナンシャルサービス',
     role: 'Full Stack Developer',
     desc: 'RCI eSign & UV-eSign — 자동차 전자 할부 계약 e-Commerce 시스템 개발',
     descEn: 'RCI eSign & UV-eSign — Automotive electronic installment contract e-Commerce system',
+    descJa: 'RCI eSign & UV-eSign — 自動車電子割賦契約e-Commerceシステム開発',
     tags: ['Spring Boot', 'Oracle', 'AngularJS'],
   },
   {
     period: '2020.09 – 2021.12',
     company: 'And U',
     companyEn: 'And U',
+    companyJa: 'And U',
     role: 'Full Stack Developer',
     desc: 'SaaS 형식 ERP 서비스 개발',
     descEn: 'SaaS-based ERP service development',
+    descJa: 'SaaS形式ERPサービス開発',
     tags: ['Java', 'MySQL', 'Vue'],
   },
   // TODO: 경력 추가
@@ -81,10 +85,10 @@ export default function About() {
           {/* Quick stats */}
           <div className="grid grid-cols-2 gap-2">
             {[
-              { value: '3+', label: lang === 'ko' ? '년 경력' : 'Yrs Exp' },
-              { value: '2+', label: lang === 'ko' ? '프로젝트' : 'Projects' },
-              { value: 'BE', label: lang === 'ko' ? '백엔드' : 'Backend' },
-              { value: 'FE', label: lang === 'ko' ? '프론트' : 'Frontend' },
+              { value: '3+', label: lang === 'ko' ? '년 경력' : lang === 'ja' ? '年の経験' : 'Yrs Exp' },
+              { value: '2+', label: lang === 'ko' ? '프로젝트' : lang === 'ja' ? 'プロジェクト' : 'Projects' },
+              { value: 'BE', label: lang === 'ko' ? '백엔드' : lang === 'ja' ? 'バックエンド' : 'Backend' },
+              { value: 'FE', label: lang === 'ko' ? '프론트' : lang === 'ja' ? 'フロント' : 'Frontend' },
             ].map(({ value, label }) => (
               <div
                 key={label}
@@ -130,11 +134,11 @@ export default function About() {
                       {item.period}
                     </p>
                     <p className="font-headline font-bold text-base text-on-surface leading-tight">
-                      {lang === 'ko' ? item.company : item.companyEn}
+                      {lang === 'ko' ? item.company : lang === 'ja' ? item.companyJa : item.companyEn}
                     </p>
                     <p className="font-label text-[11px] text-primary mb-2">{item.role}</p>
                     <p className="text-on-surface-variant text-xs leading-relaxed mb-3">
-                      {lang === 'ko' ? item.desc : item.descEn}
+                      {lang === 'ko' ? item.desc : lang === 'ja' ? item.descJa : item.descEn}
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       {item.tags.map((tag) => (

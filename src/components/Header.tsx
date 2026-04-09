@@ -53,6 +53,9 @@ export default function Header({ activeSection }: HeaderProps) {
             <span className={`text-[10px] font-medium font-label transition-colors ${lang === 'en' ? 'text-primary' : 'text-on-surface-variant'}`}>
               EN
             </span>
+            <span className={`text-[10px] font-medium font-label transition-colors ${lang === 'ja' ? 'text-primary' : 'text-on-surface-variant'}`}>
+              JA
+            </span>
           </button>
           <a
             href="#contact"

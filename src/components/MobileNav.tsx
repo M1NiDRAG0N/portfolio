@@ -6,10 +6,10 @@ interface MobileNavProps {
 }
 
 const NAV_ITEMS = [
-  { id: 'home'    as SectionId, href: '#home',    icon: 'home',         labelKo: '홈',    labelEn: 'Home'    },
-  { id: 'about'   as SectionId, href: '#about',   icon: 'person',       labelKo: '소개',  labelEn: 'About'   },
-  { id: 'work'    as SectionId, href: '#work',    icon: 'rocket_launch', labelKo: '작업물', labelEn: 'Work'   },
-  { id: 'contact' as SectionId, href: '#contact', icon: 'mail',         labelKo: '연락',  labelEn: 'Contact' },
+  { id: 'home'    as SectionId, href: '#home',    icon: 'home',          labelKo: '홈',    labelEn: 'Home',    labelJa: 'ホーム'    },
+  { id: 'about'   as SectionId, href: '#about',   icon: 'person',        labelKo: '소개',  labelEn: 'About',   labelJa: '自己紹介'  },
+  { id: 'work'    as SectionId, href: '#work',    icon: 'rocket_launch', labelKo: '작업물', labelEn: 'Work',   labelJa: '実績'      },
+  { id: 'contact' as SectionId, href: '#contact', icon: 'mail',          labelKo: '연락',  labelEn: 'Contact', labelJa: 'お問合せ'  },
 ]
 
 export default function MobileNav({ activeSection }: MobileNavProps) {
@@ -29,7 +29,7 @@ export default function MobileNav({ activeSection }: MobileNavProps) {
         >
           <span className="material-symbols-outlined">{icon}</span>
           <span className="font-body text-[10px] font-bold">
-            {lang === 'ko' ? labelKo : labelEn}
+            {lang === 'ko' ? labelKo : lang === 'ja' ? labelJa : labelEn}
           </span>
         </a>
       ))}
