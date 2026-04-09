@@ -17,7 +17,7 @@ export default function MobileNav({ activeSection }: MobileNavProps) {
 
   return (
     <nav className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] rounded-2xl border border-white/5 bg-[#060e20]/60 backdrop-blur-2xl shadow-[0_20px_40px_rgba(0,0,0,0.6)] flex justify-around items-center px-4 py-2 z-50">
-      {NAV_ITEMS.map(({ id, href, icon, labelKo, labelEn }) => (
+      {NAV_ITEMS.map(({ id, href, icon, labelKo, labelEn, labelJa }) => (
         <a
           key={id}
           href={href}
