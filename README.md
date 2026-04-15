@@ -1,86 +1,136 @@
-# Portfolio
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4f46e5,100:06b6d4&height=180&section=header&text=Portfolio&fontSize=55&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20이용민&descAlignY=58&descSize=20" width="100%"/>
+</div>
 
-> Full Stack Developer 이용민의 개인 포트폴리오 SPA
+<div align="center">
 
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub_Pages-222?logo=github)
+[![Live](https://img.shields.io/badge/🌐_Live_Site-m1nidrag0n.github.io/portfolio-06b6d4?style=for-the-badge)](https://m1nidrag0n.github.io/portfolio/)
+&nbsp;
+[![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript_5.7-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS_3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vite](https://img.shields.io/badge/Vite_6-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-181717?style=flat-square&logo=github&logoColor=white)](https://pages.github.com)
+
+</div>
+
+---
 
 ## 소개
 
-Spring Boot 백엔드부터 React/Vue 프론트엔드까지 풀스택 개발 경험을 담은 개인 포트폴리오 사이트입니다.  
-한국어/영어 전환, IntersectionObserver 기반 스크롤 애니메이션, 반응형 레이아웃을 순수 CSS와 커스텀 훅으로 구현했습니다.
+백엔드의 견고함과 프론트엔드의 세심함이 만나는 풀스택 개발자 **이용민**의 개인 포트폴리오 SPA입니다.  
+한국어 · English · 日本語 **3개 국어**를 지원하며, 스크롤 애니메이션과 반응형 레이아웃으로 구성되어 있습니다.
+
+<div align="center">
+  <img src="screen.png" alt="포트폴리오 스크린샷" width="85%"/>
+</div>
+
+---
 
 ## 주요 기능
 
-- **한/영 i18n** — `LanguageContext` + `translations.ts`로 런타임 언어 전환
-- **스크롤 애니메이션** — CSS 클래스 스왑 방식 (`fade-up`, `slide-left`, `slide-right`) + `useInView` 훅
-- **스크롤 진행 표시** — 사이드 레일이 현재 섹션 위치를 실시간 반영
-- **반응형 내비게이션** — 데스크톱 헤더 + 모바일 하단 네비게이션
-- **연락처 폼** — 클라이언트 사이드 폼 처리
+| 기능 | 설명 |
+|------|------|
+| 🌐 **3개국어 지원** | 한국어 / English / 日本語 실시간 전환 (LanguageContext) |
+| 🎞 **스크롤 애니메이션** | IntersectionObserver 기반 섹션별 fade-up / slide 애니메이션 |
+| 📱 **반응형 디자인** | 모바일 · 태블릿 · 데스크탑 완전 대응 |
+| 📜 **스크롤 프로그레스** | 상단 진행 바로 읽기 위치 시각화 |
+| 📬 **연락처 폼** | 이메일 발송 연동 |
+| ⚡ **빠른 빌드** | Vite 6 기반 최적화 번들 |
+
+---
+
+## 소개된 프로젝트
+
+### 🤖 마법의 소라고동 (sora-api) \`2026.01 – 2026.03\`
+> AI 어시스턴트가 자연어 명령으로 중고마켓·타임세일·가계부·커뮤니티를 처리하는 통합 플랫폼
+
+- Function Calling AI, 타임세일 재고 동시성 제어, 트랜잭션 기반 키워드 알림
+- k6 부하테스트: 49 CCU, p(95) 501ms, **에러율 0%** 달성
+- \`Java 21\` \`Spring Boot 3.5\` \`Spring AI\` \`MySQL 8.0\` \`Redis\` \`WebSocket\` \`SSE\` \`Docker\`
+
+### 📝 RCI eSign & UV-eSign \`2020.03 – 2022.06\`
+> 르노코리아 금융 파트너(RCI 파이낸셜)의 자동차 할부·리스 전자서명 하이브리드 앱
+
+- PhantomJS 기반 전자계약서 생성, 계약 데이터 인덱스 튜닝, 오류 재시도 스케줄러
+- \`Spring Boot\` \`Mybatis\` \`Oracle\` \`AngularJS\` \`PhantomJS\` \`Nginx\`
+
+### 🏢 And U \`2020.09 – 2021.12\`
+> SaaS 형식 기업형 ERP 하이브리드 앱
+
+- 전자결재 프로세스, COVID-19 비접촉 열화상 발열체크 I/F, 멀티테넌트 DB 설계
+- \`Spring Boot\` \`Mybatis\` \`MySQL\` \`Redis\` \`jQuery\` \`Linux\`
+
+### 🚗 GM-swork & GM-onlineSales \`2020.03 – 2021.03\`
+> 현장 태블릿으로 차량 견적·계약·전자서명을 처리하는 e-Commerce 하이브리드 앱
+
+- 실시간 프로모션 견적서 카카오톡/문자 발송, 비대면 전자결재, 계약 후 차량 실시간 추적
+- \`Spring Boot\` \`Mybatis\` \`MySQL\` \`jQuery\` \`PhantomJS\` \`Nginx\`
+
+---
 
 ## 기술 스택
 
-| 분류 | 기술 |
-|------|------|
-| UI | React 19, TypeScript 5.7 |
-| 스타일 | Tailwind CSS 3, 커스텀 CSS 애니메이션 |
-| 빌드 | Vite 6 |
-| 배포 | GitHub Pages (`gh-pages`) |
+\`\`\`
+Frontend   React 19 · TypeScript 5.7 · Tailwind CSS 3 · Vite 6
+상태 관리   React Context API (LanguageContext)
+애니메이션  IntersectionObserver · CSS Custom Animations
+배포       GitHub Pages (gh-pages)
+\`\`\`
 
-## 시작하기
+---
 
-### 필수 요구사항
+## 로컬 실행
 
-- Node.js 18+
-- npm 9+
-
-### 설치 및 실행
-
-```bash
-git clone https://github.com/M1NiDRAG0N/portfolio
+\`\`\`bash
+git clone https://github.com/M1NiDRAG0N/portfolio.git
 cd portfolio
 npm install
-npm run dev        # http://localhost:5173/portfolio/
-```
+npm run dev
+\`\`\`
 
-### 빌드 및 배포
+> 브라우저에서 \`http://localhost:5173/portfolio/\` 접속
 
-```bash
-npm run build      # TypeScript 체크 + 프로덕션 빌드 → dist/
-npm run preview    # 프로덕션 빌드 로컬 미리보기
-npm run deploy     # GitHub Pages 배포
-```
+### 배포
+
+\`\`\`bash
+npm run build
+npm run deploy   # gh-pages 브랜치로 자동 배포
+\`\`\`
+
+---
 
 ## 프로젝트 구조
 
-```
+\`\`\`
 src/
-├── components/       # 섹션별 컴포넌트 (Hero, About, TechStacks, SelectedWorks, Contact)
-├── context/          # LanguageContext (ko | en)
-├── hooks/            # useActiveSection, useScrollProgress, useInView
-├── i18n/             # translations.ts — 모든 번역 문자열
-└── App.tsx           # 섹션 순서 및 스크롤 레일 정의
-public/
-└── profile.jpg       # 프로필 사진 (직접 교체)
-```
+├── components/
+│   ├── Hero.tsx          # 메인 히어로 섹션
+│   ├── About.tsx         # 자기소개
+│   ├── TechStacks.tsx    # 기술 스택
+│   ├── SelectedWorks.tsx # 프로젝트 목록
+│   ├── Contact.tsx       # 연락처 폼
+│   ├── Header.tsx        # 네비게이션
+│   ├── Sidebar.tsx       # 사이드바
+│   ├── Footer.tsx        # 푸터
+│   └── MobileNav.tsx     # 모바일 네비게이션
+├── context/
+│   └── LanguageContext.tsx  # 3개국어 상태 관리
+├── hooks/
+│   ├── useInView.ts         # 스크롤 감지
+│   ├── useActiveSection.ts  # 활성 섹션 추적
+│   └── useScrollProgress.ts # 스크롤 진행도
+└── i18n/
+    └── translations.ts      # KO / EN / JA 번역 데이터
+\`\`\`
 
-### 콘텐츠 수정 위치
+---
 
-| 콘텐츠 | 파일 |
-|--------|------|
-| 프로젝트 목록 | `src/components/SelectedWorks.tsx` — `projects` 배열 |
-| 경력 타임라인 | `src/components/About.tsx` — `timeline` 배열 |
-| 기술 스택 카드 | `src/components/TechStacks.tsx` — `stacks` 배열 |
-| 번역 / 카피 | `src/i18n/translations.ts` |
-| 프로필 사진 | `public/profile.jpg` |
+<div align="center">
 
-## 스크린샷
+[![GitHub](https://img.shields.io/badge/GitHub-M1NiDRAG0N-181717?style=for-the-badge&logo=github)](https://github.com/M1NiDRAG0N)
+[![Gmail](https://img.shields.io/badge/Gmail-minidragon.lee@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:minidragon.lee@gmail.com)
 
-![포트폴리오 스크린샷](screen.png)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,100:4f46e5&height=100&section=footer" width="100%"/>
 
-## 라이선스
-
-MIT
+</div>
